@@ -1,0 +1,12 @@
+name: "Webhook"
+description: "Post custom JSON payload data to the user defined endpoint"
+inputs:
+  webhook-url:
+    description: "http:// or https:// url endpoint to have data POSTed too"
+    required: true
+  webhook-payload:
+    description: "JSON payload to be POSTed to the specified endpoint"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
